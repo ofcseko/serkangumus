@@ -173,6 +173,7 @@
      activation email to the inbox; until then, or if anything fails, it falls back to the
      visitor's mail app with the message pre-filled, so a message is never lost. */
   var EMAIL = "srkangmss@gmail.com";
+  var FORM_ID = "c75bc41dfefc2b1b82b4edb3f345d188"; // FormSubmit alias for the inbox above
   var form = $("[data-form]");
   if (form) {
     var status = $("[data-status]"), submit = $("[data-submit]", form);
@@ -201,7 +202,7 @@
       submit.disabled = true;
       setStatus(t("Sending…", "Gönderiliyor…"), "");
 
-      fetch("https://formsubmit.co/ajax/" + EMAIL, {
+      fetch("https://formsubmit.co/ajax/" + FORM_ID, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
