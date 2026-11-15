@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Serkan Gümüş — Software Developer &amp; 3D Designer</title>
+  <meta name="description" content="Serkan Gümüş — Software Developer & 3D Designer in İzmir. Interactive web apps, UI/UX and 3D design. Work: Ezgi ve Ritim, QRose, Atatürk Memorial.">
+  <meta name="author" content="Serkan Gümüş">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://serkangumus.vercel.app/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Serkan Gümüş">
+  <meta property="og:title" content="Serkan Gümüş — Software Developer & 3D Designer">
+  <meta property="og:description" content="Interactive web apps, UI/UX and 3D design — built and shipped end to end.">
+  <meta property="og:url" content="https://serkangumus.vercel.app/">
+  <meta property="og:image" content="https://serkangumus.vercel.app/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Serkan Gümüş — Code to Form portfolio">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="profile:first_name" content="Serkan">
+  <meta property="profile:last_name" content="Gümüş">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Serkan Gümüş — Software Developer & 3D Designer">
+  <meta name="twitter:description" content="Interactive web apps, UI/UX and 3D design.">
+  <meta name="twitter:image" content="https://serkangumus.vercel.app/assets/og-image.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/display-700.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/sans-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=3">
+
+  <script>
+    (function () {
+      var l = "en";
+      try { l = localStorage.getItem("lang") || ""; } catch (e) { l = ""; }
+      if (l !== "en" && l !== "tr") {
+        var q = new URLSearchParams(location.search).get("lang");
+        l = q === "tr" || q === "en" ? q : ((navigator.language || "").toLowerCase().indexOf("tr") === 0 ? "tr" : "en");
+      }
+      document.documentElement.setAttribute("data-lang", l);
+      document.documentElement.lang = l;
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Serkan Gümüş",
+    "jobTitle": "Software Developer & 3D Designer",
+    "url": "https://serkangumus.vercel.app/",
+    "email": "mailto:srkangmss@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "İzmir", "addressCountry": "TR" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Dokuz Eylül University" },
+    "knowsAbout": ["JavaScript", "Web Audio API", "UI/UX", "Blender", "Figma", "Arduino", "Responsive Web Design"],
+    "sameAs": [
+      "https://github.com/ofcseko",
+      "https://www.linkedin.com/in/serkan-g%C3%BCm%C3%BC%C5%9F-11301a2b6/",
+      "https://www.youtube.com/@serkan8070",
+      "https://www.instagram.com/srkangmus/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="tr">İçeriğe geç</span></a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" data-header>
+    <div class="container header-row">
+      <a class="logo" href="#top" aria-label="Serkan Gümüş — home">
+        <span class="logo-mark" aria-hidden="true">SG</span>
+        <span class="logo-name">Serkan Gümüş</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#work" data-nav><span data-l="en">Work</span><span data-l="tr">Projeler</span></a>
+        <a href="#experience" data-nav><span data-l="en">Experience</span><span data-l="tr">Deneyim</span></a>
+        <a href="#about" data-nav><span data-l="en">About</span><span data-l="tr">Hakkımda</span></a>
+        <a href="#contact" data-nav><span data-l="en">Contact</span><span data-l="tr">İletişim</span></a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang" type="button" data-lang-toggle aria-label="Switch language / Dili değiştir">
+          <span class="lang-opt" data-opt="en">EN</span><span class="lang-sep" aria-hidden="true">/</span><span class="lang-opt" data-opt="tr">TR</span>
+        </button>
+        <a class="btn btn-sm btn-accent" href="assets/Serkan-Gumus-CV.pdf" target="_blank" rel="noopener" data-cv>
+          <span data-l="en">Résumé</span><span data-l="tr">CV</span>
+          <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M8 2v8m0 0 3.5-3.5M8 10 4.5 6.5M3 13h10" /></svg>
+        </a>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Menu</span><span class="menu-lines" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" data-menu hidden>
+      <a href="#work" data-close-menu><span data-l="en">Work</span><span data-l="tr">Projeler</span></a>
+      <a href="#experience" data-close-menu><span data-l="en">Experience</span><span data-l="tr">Deneyim</span></a>
+      <a href="#about" data-close-menu><span data-l="en">About</span><span data-l="tr">Hakkımda</span></a>
+      <a href="#skills" data-close-menu><span data-l="en">Skills</span><span data-l="tr">Beceriler</span></a>
+      <a href="#contact" data-close-menu><span data-l="en">Contact</span><span data-l="tr">İletişim</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="status reveal">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-l="en">Open to opportunities · İzmir / Remote</span>
+            <span data-l="tr">Yeni fırsatlara açığım · İzmir / Uzaktan</span>
+          </p>
+
+          <h1 class="hero-title">
+            <span class="sr-only">Serkan Gümüş — Software Developer &amp; 3D Designer.</span>
+            <span class="hero-line reveal" aria-hidden="true">Code<span class="accent-dot">.</span></span>
+            <span class="hero-line hero-line-serif reveal" aria-hidden="true"><span class="arrow">↳</span>Form</span>
+          </h1>
+
+          <p class="hero-role reveal">
+            <strong>Serkan Gümüş</strong> — Software Developer <span class="muted">&amp; 3D Designer</span>
+          </p>
+
+          <p class="hero-lede reveal">
+            <span data-l="en">I build interactive web experiences end to end — from a music ear-training app that listens through your microphone to QR menu systems for real restaurant clients — and shape them with 3D and UI design.</span>
+            <span data-l="tr">Etkileşimli web deneyimlerini uçtan uca kuruyorum — mikrofondan seni dinleyen bir müzik kulak eğitimi uygulamasından gerçek restoran müşterileri için QR menü sistemlerine — ve onları 3D ile arayüz tasarımıyla şekillendiriyorum.</span>
+          </p>
+
+          <div class="hero-cta reveal">
+            <a class="btn btn-primary" href="#work">
+              <span data-l="en">See live work</span><span data-l="tr">Canlı işleri gör</span>
+              <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M8 3v10m0 0 4-4m-4 4-4-4" /></svg>
+            </a>
+            <a class="btn btn-ghost" href="assets/Serkan-Gumus-CV.pdf" target="_blank" rel="noopener">
+              <span data-l="en">Download résumé</span><span data-l="tr">CV'yi indir</span>
+            </a>
+            <div class="hero-social">
+              <a class="icon-btn" href="https://www.linkedin.com/in/serkan-g%C3%BCm%C3%BC%C5%9F-11301a2b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.92 1.3-1.92 2.63V21h-4V9.75Z"/></svg>
+              </a>
+              <a class="icon-btn" href="https://github.com/ofcseko" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <figure class="hero-art reveal" aria-hidden="true">
+          <canvas class="sculpture" data-sculpture></canvas>
+          <span class="art-tag art-tag-a">01 / CODE<small data-l="en">wireframe</small><small data-l="tr">çizgi</small></span>
+          <span class="art-tag art-tag-b">02 / FORM<small data-l="en">surface</small><small data-l="tr">yüzey</small></span>
+        </figure>
+      </div>
+
+      <div class="container">
+        <dl class="proof reveal-group">
+          <div class="proof-item reveal">
+            <dt class="proof-num"><span data-count="2">2</span></dt>
+            <dd><span data-l="en">live web apps</span><span data-l="tr">canlı web uygulaması</span></dd>
+          </div>
+          <div class="proof-item reveal">
+            <dt class="proof-num"><span data-count="2">2</span></dt>
+            <dd><span data-l="en">seasons working in the U.S.</span><span data-l="tr">sezon ABD'de iş deneyimi</span></dd>
+          </div>
+          <div class="proof-item reveal">
+            <dt class="proof-num">TÜBİTAK</dt>
+            <dd><span data-l="en">research project</span><span data-l="tr">araştırma projesi</span></dd>
+          </div>
+          <div class="proof-item reveal">
+            <dt class="proof-num">B.Sc.</dt>
+            <dd><span data-l="en">CEIT, Dokuz Eylül Univ. ’26</span><span data-l="tr">BÖTE, Dokuz Eylül Üniv. ’26</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>JavaScript</span><i>✦</i><span>Web Audio API</span><i>✦</i><span>HTML5 &amp; CSS3</span><i>✦</i><span>UI / UX</span><i>✦</i><span>Blender</span><i>✦</i><span>Figma</span><i>✦</i><span>Arduino · C/C++</span><i>✦</i><span>Python</span><i>✦</i><span>Git &amp; GitHub</span><i>✦</i><span>Vercel</span><i>✦</i><span>WordPress</span><i>✦</i>
+          <span>JavaScript</span><i>✦</i><span>Web Audio API</span><i>✦</i><span>HTML5 &amp; CSS3</span><i>✦</i><span>UI / UX</span><i>✦</i><span>Blender</span><i>✦</i><span>Figma</span><i>✦</i><span>Arduino · C/C++</span><i>✦</i><span>Python</span><i>✦</i><span>Git &amp; GitHub</span><i>✦</i><span>Vercel</span><i>✦</i><span>WordPress</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-num">01</span><span data-l="en">Selected work</span><span data-l="tr">Seçili işler</span></p>
+          <h2 class="section-title">
+            <span data-l="en">Shipped, live, <em>clickable.</em></span>
+            <span data-l="tr">Yayında, canlı, <em>tıklanabilir.</em></span>
+          </h2>
+          <p class="section-intro">
+            <span data-l="en">Real products for real users — designed, built and shipped by me. Open the live ones right now.</span>
+            <span data-l="tr">Gerçek kullanıcılar için gerçek ürünler — tasarımı, kodu ve yayını bana ait. Canlı olanları hemen açabilirsin.</span>
+          </p>
+        </header>
+
+        <!-- Project 1: Ezgi ve Ritim -->
+        <article class="project project-feature reveal" data-spot>
+          <div class="project-media" data-gallery="ritim">
+            <button class="shot shot-main" type="button" data-open="0" aria-label="Open screenshots — Ezgi ve Ritim">
+              <img src="assets/img/ritim-1.jpg" width="1600" height="899" alt="Ezgi ve Ritim — rhythm player playing Karşılama 9/8" loading="lazy" decoding="async">
+            </button>
+            <div class="shot-row">
+              <button class="shot" type="button" data-open="1" aria-label="Screenshot 2"><img src="assets/img/ritim-2.jpg" width="1600" height="899" alt="Step sequencer with darbuka, def and zil tracks" loading="lazy" decoding="async"></button>
+              <button class="shot" type="button" data-open="2" aria-label="Screenshot 3"><img src="assets/img/ritim-3.jpg" width="1600" height="899" alt="Ear test — sing the melody back into the microphone" loading="lazy" decoding="async"></button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="live-badge"><span class="status-dot" aria-hidden="true"></span><span data-l="en">Live</span><span data-l="tr">Canlı</span></span>
+              <span>2026</span>
+            </div>
+            <h3 class="project-title">Ezgi ve Ritim</h3>
+            <p class="project-sub">
+              <span data-l="en">Usul player &amp; ear trainer</span>
+              <span data-l="tr">Usul çalar &amp; kulak eğitmeni</span>
+            </p>
+            <p>
+              <span data-l="en">Two tools in one browser app. A rhythm player with traditional Turkish usuls — Karşılama 9/8, Aksak, Zeybek, Horon 7/16 and more — on a step sequencer with real darbuka, def and zil samples. And an ear test that plays a melody and rhythm, then listens through your microphone as you sing it back and scores how well you kept time.</span>
+              <span data-l="tr">Tek tarayıcı uygulamasında iki araç. Karşılama 9/8, Aksak, Zeybek, Horon 7/16 gibi geleneksel usulleri gerçek darbuka, def ve zil sesleriyle çalan bir ritim çalar ve adım sıralayıcı. Bir de kulak testi: ezgi ve ritmi çalar, sen mikrofona söylerken seni dinler ve tempoyu ne kadar tuttuğunu ölçer.</span>
+            </p>
+            <ul class="project-points">
+              <li><span data-l="en">14 ready-made usuls and grooves, editable step by step with accents and sub-steps</span><span data-l="tr">14 hazır usul ve ritim; vurgu ve alt vuruşlarla adım adım düzenlenebilir</span></li>
+              <li><span data-l="en">Microphone analysis with the Web Audio API to score your timing</span><span data-l="tr">Tempoyu puanlamak için Web Audio API ile mikrofon analizi</span></li>
+              <li><span data-l="en">Save and reload your own rhythms in the browser</span><span data-l="tr">Kendi ritimlerini tarayıcıda kaydet ve geri aç</span></li>
+              <li><span data-l="en">Built for middle-school students and anyone training their ear</span><span data-l="tr">Ortaokul öğrencileri ve kulağını geliştirmek isteyen herkes için</span></li>
+            </ul>
+            <ul class="tags"><li>JavaScript</li><li>Web Audio API</li><li><span data-l="en">Step sequencer</span><span data-l="tr">Adım sıralayıcı</span></li><li><span data-l="en">Mic analysis</span><span data-l="tr">Mikrofon analizi</span></li></ul>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" href="https://ezgi-ve-ritim.vercel.app" target="_blank" rel="noopener noreferrer">
+                <span data-l="en">Open live site</span><span data-l="tr">Canlı siteyi aç</span>
+                <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M5 11 11 5m0 0H6m5 0v5" /></svg>
+              </a>
+              <a class="link" href="https://github.com/ofcseko/ezgi-ve-ritim" target="_blank" rel="noopener noreferrer"><span data-l="en">Source code</span><span data-l="tr">Kaynak kod</span> ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: QRose -->
+        <article class="project project-feature project-flip reveal" data-spot>
+          <div class="project-media" data-gallery="qrose">
+            <button class="shot shot-main" type="button" data-open="0" aria-label="Open images — QRose">
+              <img src="assets/img/qrose-mockup.jpg" width="1024" height="1024" alt="QRose digital menu on laptop and phone" loading="lazy" decoding="async">
+            </button>
+            <div class="shot-row">
+              <button class="shot" type="button" data-open="1" aria-label="Image 2"><img src="assets/img/qrose-social.jpg" width="1024" height="1024" alt="QRose social media campaign design" loading="lazy" decoding="async"></button>
+              <button class="shot" type="button" data-open="2" aria-label="Image 3"><img src="assets/img/qrose-3d.jpg" width="1024" height="682" alt="QRose 3D brand render made in Blender" loading="lazy" decoding="async"></button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="proto-badge"><span data-l="en">Client work</span><span data-l="tr">Müşteri işi</span></span>
+              <span><span data-l="en">Co-founder</span><span data-l="tr">Kurucu ortak</span> · 2025 — 2026</span>
+            </div>
+            <h3 class="project-title">QRose</h3>
+            <p class="project-sub">
+              <span data-l="en">Smart QR menus for restaurants</span>
+              <span data-l="tr">Restoranlar için akıllı QR menü</span>
+            </p>
+            <p>
+              <span data-l="en">A freelance venture I co-founded: responsive, mobile-first digital menus for cafés and restaurants. I handled the whole lifecycle — client onboarding and requirements, UI/UX and category layout, brand identity and 3D promo renders, deployment and ongoing maintenance.</span>
+              <span data-l="tr">Kurucu ortağı olduğum serbest girişim: kafe ve restoranlar için mobil öncelikli, duyarlı dijital menüler. Tüm süreci yürüttüm — müşteriyle tanışma ve ihtiyaç analizi, arayüz/UX ve kategori düzeni, marka kimliği ve 3D tanıtım görselleri, yayın ve sonrasındaki bakım.</span>
+            </p>
+            <ul class="project-points">
+              <li><span data-l="en">Real clients in hospitality, end-to-end ownership</span><span data-l="tr">Gerçek müşteriler, uçtan uca sorumluluk</span></li>
+              <li><span data-l="en">Brand, social and 3D assets designed in-house</span><span data-l="tr">Marka, sosyal medya ve 3D görseller kendi tasarımımız</span></li>
+            </ul>
+            <ul class="tags"><li>Front-end</li><li>UI / UX</li><li>Brand design</li><li>Blender</li></ul>
+            <div class="project-links">
+              <p class="zoom-hint"><svg aria-hidden="true" viewBox="0 0 16 16"><path d="M7 3H3v4M9 13h4V9M3 3l4 4m6 6-4-4"/></svg><span data-l="en">Click the images to see them up close</span><span data-l="tr">Yakından görmek için görsellere tıkla</span></p>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <!-- Project 3: Atatürk Memorial -->
+          <article class="project project-card reveal" data-spot>
+            <a class="card-art art-memorial" href="https://ataturk-memorial.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Open Atatürk Memorial live site">
+              <span class="memorial-years">1881 — <em>∞</em></span>
+              <span class="memorial-sign">M. K. Atatürk</span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="live-badge"><span class="status-dot" aria-hidden="true"></span><span data-l="en">Live</span><span data-l="tr">Canlı</span></span>
+                <span>HTML · CSS · JS</span>
+              </div>
+              <h3 class="project-title-sm"><span data-l="en">Atatürk Memorial</span><span data-l="tr">Atatürk Anma Sitesi</span></h3>
+              <p>
+                <span data-l="en">A responsive memorial web experience honoring Mustafa Kemal Atatürk, written in plain HTML, modern CSS and vanilla JavaScript.</span>
+                <span data-l="tr">Mustafa Kemal Atatürk'ü anan, saf HTML, modern CSS ve vanilla JavaScript ile yazılmış duyarlı bir web deneyimi.</span>
+              </p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project-links">
+                <a class="link" href="https://ataturk-memorial.vercel.app" target="_blank" rel="noopener noreferrer"><span data-l="en">Live site</span><span data-l="tr">Canlı site</span> ↗</a>
+                <a class="link" href="https://github.com/ofcseko/ataturk-memorial" target="_blank" rel="noopener noreferrer"><span data-l="en">Code</span><span data-l="tr">Kod</span> ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Smart monitor light -->
+          <article class="project project-card reveal" data-spot>
+            <div class="card-art art-lamp" aria-hidden="true">
+              <svg viewBox="0 0 320 200">
+                <defs>
+                  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#e8ff6b" stop-opacity=".55"/>
+                    <stop offset="1" stop-color="#e8ff6b" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path class="beam" d="M110 62 L60 190 H260 L210 62Z" fill="url(#beam)"/>
+                <rect x="70" y="70" width="180" height="104" rx="6" fill="#141416" stroke="#3a3a40"/>
+                <rect x="78" y="78" width="164" height="88" rx="2" fill="#0d0d0f"/>
+                <path d="M92 150 l20-22 18 12 24-30 22 18 22-26" fill="none" stroke="#5c5c66" stroke-width="2"/>
+                <rect x="100" y="48" width="120" height="16" rx="8" fill="#26262b" stroke="#4a4a52"/>
+                <rect x="112" y="60" width="96" height="4" rx="2" fill="#e8ff6b" class="led"/>
+                <circle cx="214" cy="56" r="4" fill="#ff7a59"/>
+                <path d="M150 174 v12 h20 v-12" fill="#1c1c20"/>
+                <text x="232" y="38" fill="#8c8c96" font-size="10" font-family="monospace">LDR</text>
+                <path d="M228 42 l-12 10" stroke="#8c8c96" stroke-width="1"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="proto-badge"><span data-l="en">Prototype</span><span data-l="tr">Prototip</span></span><span>Arduino × Blender</span></div>
+              <h3 class="project-title-sm"><span data-l="en">Smart Monitor Light</span><span data-l="tr">Akıllı Monitör Lambası</span></h3>
+              <p>
+                <span data-l="en">A monitor light bar that adapts to ambient light: LDR sensor, C/C++ Arduino firmware and a custom enclosure modelled in Blender.</span>
+                <span data-l="tr">Ortam ışığına göre kendini ayarlayan monitör lambası: LDR sensörü, C/C++ Arduino yazılımı ve Blender'da modellediğim özel gövde.</span>
+              </p>
+              <ul class="tags"><li>Arduino</li><li>C/C++</li><li>Blender</li><li>Hardware</li></ul>
+            </div>
+          </article>
+
+          <!-- Project 5: ADHD game -->
+          <article class="project project-card reveal" data-spot>
+            <div class="card-art art-game" aria-hidden="true">
+              <svg viewBox="0 0 320 200">
+                <g class="game-grid">
+                  <rect x="70" y="40" width="50" height="50" rx="12" fill="#ff7a59"/>
+                  <rect x="135" y="40" width="50" height="50" rx="25" fill="#8ad7ff"/>
+                  <rect x="200" y="40" width="50" height="50" rx="12" fill="#26262b" stroke="#4a4a52"/>
+                  <rect x="70" y="105" width="50" height="50" rx="25" fill="#26262b" stroke="#4a4a52"/>
+                  <rect x="135" y="105" width="50" height="50" rx="12" fill="#e8ff6b"/>
+                  <rect x="200" y="105" width="50" height="50" rx="25" fill="#b69cff"/>
+                </g>
+                <rect x="70" y="170" width="180" height="6" rx="3" fill="#26262b"/>
+                <rect x="70" y="170" width="118" height="6" rx="3" fill="#e8ff6b" class="progress"/>
+                <path d="M216 61 l8 8 14-16" fill="none" stroke="#e8ff6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="proto-badge">TÜBİTAK</span><span>2024 — 2025</span></div>
+              <h3 class="project-title-sm"><span data-l="en">ADHD-Focused Learning Game</span><span data-l="tr">DEHB Odaklı Eğitsel Oyun</span></h3>
+              <p>
+                <span data-l="en">Research and design of an educational game framework for individuals with ADHD — gamification, wireframes, instructional flow and feedback loops, plus the technical report submitted to TÜBİTAK.</span>
+                <span data-l="tr">DEHB'li bireyler için eğitsel oyun çerçevesinin araştırması ve tasarımı — oyunlaştırma, wireframe'ler, öğretim akışı ve geri bildirim döngüleri; TÜBİTAK'a sunulan teknik rapor.</span>
+              </p>
+              <ul class="tags"><li><span data-l="en">Research</span><span data-l="tr">Araştırma</span></li><li>UX</li><li><span data-l="en">Gamification</span><span data-l="tr">Oyunlaştırma</span></li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-num">02</span><span data-l="en">Experience</span><span data-l="tr">Deneyim</span></p>
+          <h2 class="section-title">
+            <span data-l="en">Where I’ve <em>worked.</em></span>
+            <span data-l="tr">Nerelerde <em>çalıştım.</em></span>
+          </h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <div class="tl-when">2025 — 2026</div>
+            <div class="tl-main">
+              <h3><span data-l="en">Project Assistant / Part-Time Developer</span><span data-l="tr">Proje Asistanı / Yarı Zamanlı Geliştirici</span></h3>
+              <p class="tl-org">DEÜZEM — <span data-l="en">Distance Education Center, Dokuz Eylül University</span><span data-l="tr">Dokuz Eylül Üniversitesi Uzaktan Eğitim Merkezi</span></p>
+              <ul>
+                <li><span data-l="en">End-to-end technical support for the university’s distance-learning infrastructure and LMS.</span><span data-l="tr">Üniversitenin uzaktan eğitim altyapısı ve LMS'i için uçtan uca teknik destek.</span></li>
+                <li><span data-l="en">Content management, digital learning materials and reliability checks across online education portals.</span><span data-l="tr">Çevrim içi eğitim portallarında içerik yönetimi, dijital materyal hazırlığı ve sistem güvenilirlik kontrolleri.</span></li>
+                <li><span data-l="en">Wrote internal scripts and automations to speed up operations and asset delivery.</span><span data-l="tr">Operasyonu ve içerik teslimini hızlandıran iç script'ler ve otomasyonlar yazdım.</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-when">2025 — 2026</div>
+            <div class="tl-main">
+              <h3><span data-l="en">Front-End Web Designer &amp; Co-Founder</span><span data-l="tr">Front-End Web Tasarımcı &amp; Kurucu Ortak</span></h3>
+              <p class="tl-org">QRose · <span data-l="en">Freelance</span><span data-l="tr">Serbest</span></p>
+              <ul>
+                <li><span data-l="en">Built and deployed mobile-first QR menu solutions for local restaurants and cafés.</span><span data-l="tr">Yerel restoran ve kafeler için mobil öncelikli QR menü çözümleri geliştirip yayına aldım.</span></li>
+                <li><span data-l="en">Managed the full client lifecycle — onboarding, requirements, design, post-launch maintenance.</span><span data-l="tr">Müşteri sürecinin tamamını yönettim — tanışma, ihtiyaç analizi, tasarım, yayın sonrası bakım.</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-when">2024 — 2025</div>
+            <div class="tl-main">
+              <h3><span data-l="en">Researcher — ADHD-Focused Educational Game</span><span data-l="tr">Araştırmacı — DEHB Odaklı Eğitsel Oyun</span></h3>
+              <p class="tl-org"><span data-l="en">TÜBİTAK research project</span><span data-l="tr">TÜBİTAK araştırma projesi</span></p>
+              <ul>
+                <li><span data-l="en">Designed gamified flows, UI wireframes and feedback loops under academic supervision.</span><span data-l="tr">Akademik danışmanlık altında oyunlaştırılmış akışlar, arayüz wireframe'leri ve geri bildirim döngüleri tasarladım.</span></li>
+                <li><span data-l="en">Authored the technical documentation, milestones and empirical report for evaluation.</span><span data-l="tr">Değerlendirme için teknik dokümantasyonu, kilometre taşlarını ve ampirik raporu yazdım.</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-when"><span data-l="en">Summers</span><span data-l="tr">Yaz</span> 2024 &amp; 2026</div>
+            <div class="tl-main">
+              <h3><span data-l="en">Lifeguard &amp; Facility Operator</span><span data-l="tr">Cankurtaran &amp; Tesis Operatörü</span></h3>
+              <p class="tl-org">Work &amp; Travel USA — Woodbridge, VA · Rockville, MD</p>
+              <ul>
+                <li><span data-l="en">Kept a high-responsibility aquatic facility safe and running in a multicultural, English-speaking team.</span><span data-l="tr">Çok kültürlü, İngilizce konuşulan bir ekipte yüksek sorumluluk gerektiren bir su tesisinin güvenliğini ve işleyişini sağladım.</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-when">2022 — 2026</div>
+            <div class="tl-main">
+              <h3><span data-l="en">B.Sc. Computer Education &amp; Instructional Technology</span><span data-l="tr">Bilgisayar ve Öğretim Teknolojileri Öğretmenliği (BÖTE)</span></h3>
+              <p class="tl-org"><span data-l="en">Dokuz Eylül University, İzmir · GPA 3.09 / 4.00</span><span data-l="tr">Dokuz Eylül Üniversitesi, İzmir · GNO 3.09 / 4.00</span></p>
+              <ul>
+                <li><span data-l="en">Volunteer event organizer for TÜBİTAK project activities.</span><span data-l="tr">TÜBİTAK proje etkinliklerinde gönüllü organizatör.</span></li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-num">03</span><span data-l="en">About</span><span data-l="tr">Hakkımda</span></p>
+          <h2 class="section-title">
+            <span data-l="en">Roots, range &amp; the urge to <em>build.</em></span>
+            <span data-l="tr">Kökler, adaptasyon ve <em>üretme</em> tutkusu.</span>
+          </h2>
+        </header>
+        <div class="about-copy reveal">
+          <p class="lead">
+            <span data-l="en">I grew up in a military family, which meant growing up everywhere — Tokat, Hakkâri, Erzurum, Nevşehir, Kocaeli and finally İzmir. Constantly starting over taught me to adapt fast, read people and communicate clearly.</span>
+            <span data-l="tr">Asker çocuğu olarak büyüdüm; bu da her yerde büyümek demekti — Tokat, Hakkâri, Erzurum, Nevşehir, Kocaeli ve sonunda İzmir. Sürekli yeniden başlamak bana hızlı uyum sağlamayı, insanları okumayı ve net iletişim kurmayı öğretti.</span>
+          </p>
+          <p>
+            <span data-l="en">Studying instructional technology, I fell for the logic of systems — and for the moment a design turns into something people can actually use. Today I combine front-end development, UI/UX and 3D modeling, and I use AI-assisted workflows to ship faster without cutting corners.</span>
+            <span data-l="tr">Öğretim teknolojileri okurken sistemlerin mantığına — ve bir tasarımın insanların gerçekten kullanabildiği bir şeye dönüştüğü o ana — tutuldum. Bugün front-end geliştirme, UI/UX ve 3D modellemeyi birleştiriyorum; yapay zekâ destekli iş akışlarıyla kaliteden ödün vermeden daha hızlı üretiyorum.</span>
+          </p>
+          <p>
+            <span data-l="en">Away from the screen: 7+ years of calisthenics, playing guitar and bağlama, skiing, and making Shorts for my YouTube channel.</span>
+            <span data-l="tr">Ekran dışında: 7 yılı aşkın calisthenics, gitar ve bağlama çalmak, kayak ve YouTube kanalım için Shorts üretmek.</span>
+          </p>
+          <ul class="facts">
+            <li><span class="fact-k"><span data-l="en">Based in</span><span data-l="tr">Konum</span></span><span class="fact-v">İzmir, Türkiye</span></li>
+            <li><span class="fact-k"><span data-l="en">Languages</span><span data-l="tr">Diller</span></span><span class="fact-v"><span data-l="en">Turkish (native), English (professional)</span><span data-l="tr">Türkçe (ana dil), İngilizce (profesyonel)</span></span></li>
+            <li><span class="fact-k"><span data-l="en">Focus</span><span data-l="tr">Odak</span></span><span class="fact-v"><span data-l="en">Front-end, interactive UI, 3D</span><span data-l="tr">Front-end, etkileşimli arayüz, 3D</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-num">04</span><span data-l="en">Toolkit</span><span data-l="tr">Beceriler</span></p>
+          <h2 class="section-title">
+            <span data-l="en">What I work <em>with.</em></span>
+            <span data-l="tr">Neyle <em>çalışıyorum.</em></span>
+          </h2>
+        </header>
+        <div class="skills-grid">
+          <article class="skill reveal" data-spot>
+            <span class="skill-icon" aria-hidden="true">01</span>
+            <h3><span data-l="en">Web development</span><span data-l="tr">Web geliştirme</span></h3>
+            <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li><li>Web Audio API</li><li>Responsive design</li><li>Node.js basics</li></ul>
+          </article>
+          <article class="skill reveal" data-spot>
+            <span class="skill-icon" aria-hidden="true">02</span>
+            <h3><span data-l="en">Design &amp; 3D</span><span data-l="tr">Tasarım &amp; 3D</span></h3>
+            <ul class="tags"><li>Blender</li><li>Figma</li><li>UI / UX prototyping</li><li>Logo &amp; brand</li></ul>
+          </article>
+          <article class="skill reveal" data-spot>
+            <span class="skill-icon" aria-hidden="true">03</span>
+            <h3><span data-l="en">Tools &amp; platforms</span><span data-l="tr">Araçlar &amp; platformlar</span></h3>
+            <ul class="tags"><li>Git &amp; GitHub</li><li>Vercel</li><li>WordPress</li><li>Divi</li><li><span data-l="en">AI-assisted dev</span><span data-l="tr">YZ destekli geliştirme</span></li></ul>
+          </article>
+          <article class="skill reveal" data-spot>
+            <span class="skill-icon" aria-hidden="true">04</span>
+            <h3><span data-l="en">Hardware &amp; data</span><span data-l="tr">Donanım &amp; veri</span></h3>
+            <ul class="tags"><li>Arduino (C/C++)</li><li>Python</li><li>Advanced Excel</li></ul>
+          </article>
+        </div>
+
+        <div class="certs reveal">
+          <h3 class="certs-title"><span data-l="en">Certificates</span><span data-l="tr">Sertifikalar</span></h3>
+          <ul>
+            <li><span>Web Development with HTML5 &amp; CSS3</span><span class="muted">BTK Academy · 2025</span></li>
+            <li><span>Introduction to Cyber Security</span><span class="muted">BTK Academy · 2025</span></li>
+            <li><span><span data-l="en">Research &amp; Project Participation</span><span data-l="tr">Araştırma &amp; Proje Katılım Belgesi</span></span><span class="muted">TÜBİTAK</span></li>
+            <li><span><span data-l="en">Effective Diction &amp; Public Speaking</span><span data-l="tr">Etkili Diksiyon &amp; Topluluk Önünde Konuşma</span></span><span class="muted"><span data-l="en">Certificate</span><span data-l="tr">Sertifika</span></span></li>
+            <li><span><span data-l="en">Applied Instructional Technology Practicum</span><span data-l="tr">Uygulamalı Öğretim Teknolojileri Stajı</span></span><span class="muted">IT &amp; Digital Literacy</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-card reveal" data-spot>
+          <p class="eyebrow"><span class="eyebrow-num">05</span><span data-l="en">Contact</span><span data-l="tr">İletişim</span></p>
+          <h2 class="contact-title">
+            <span data-l="en">Let’s build something <em>worth using.</em></span>
+            <span data-l="tr">Kullanmaya değer bir şey <em>yapalım.</em></span>
+          </h2>
+          <p class="section-intro">
+            <span data-l="en">Hiring, a freelance project or just a hello — my inbox is open.</span>
+            <span data-l="tr">İş teklifi, serbest bir proje ya da sadece bir merhaba — gelen kutum açık.</span>
+          </p>
+
+          <div class="contact-actions">
+            <a class="mail-big" href="mailto:srkangmss@gmail.com">srkangmss@gmail.com</a>
+            <button class="btn btn-ghost btn-sm" type="button" data-copy="srkangmss@gmail.com">
+              <span data-l="en">Copy email</span><span data-l="tr">E-postayı kopyala</span>
+            </button>
+          </div>
+
+          <div class="contact-grid">
+            <form class="form" data-form novalidate>
+              <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <div class="form-row">
+                <label class="field">
+                  <span><span data-l="en">Name</span><span data-l="tr">İsim</span></span>
+                  <input name="name" type="text" autocomplete="name" maxlength="80" required>
+                </label>
+                <label class="field">
+                  <span><span data-l="en">Email</span><span data-l="tr">E-posta</span></span>
+                  <input name="email" type="email" autocomplete="email" maxlength="120" required>
+                </label>
+              </div>
+              <label class="field">
+                <span><span data-l="en">Message</span><span data-l="tr">Mesaj</span></span>
+                <textarea name="message" rows="4" maxlength="2000" required></textarea>
+              </label>
+              <div class="form-foot">
+                <button class="btn btn-primary" type="submit" data-submit>
+                  <span data-l="en">Send message</span><span data-l="tr">Mesajı gönder</span>
+                  <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8h10m0 0L9 4m4 4-4 4" /></svg>
+                </button>
+                <p class="form-status" data-status role="status" aria-live="polite"></p>
+              </div>
+            </form>
+
+            <ul class="channels">
+              <li><a href="https://www.linkedin.com/in/serkan-g%C3%BCm%C3%BC%C5%9F-11301a2b6/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span class="muted">/in/serkan-gümüş</span><i aria-hidden="true">↗</i></a></li>
+              <li><a href="https://github.com/ofcseko" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span class="muted">@ofcseko</span><i aria-hidden="true">↗</i></a></li>
+              <li><a href="tel:+905433253505"><span><span data-l="en">Phone</span><span data-l="tr">Telefon</span></span><span class="muted">+90 543 325 35 05</span><i aria-hidden="true">↗</i></a></li>
+              <li><a href="assets/Serkan-Gumus-CV.pdf" target="_blank" rel="noopener"><span><span data-l="en">Résumé</span><span data-l="tr">CV</span></span><span class="muted">PDF</span><i aria-hidden="true">↓</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span data-year>2026</span> Serkan Gümüş</p>
+      <ul class="footer-social" aria-label="Social">
+        <li><a href="https://www.youtube.com/@serkan8070" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+        <li><a href="https://www.instagram.com/srkangmus/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.twitch.tv/ofcseko" target="_blank" rel="noopener noreferrer">Twitch</a></li>
+        <li><a href="https://kick.com/ofcseko" target="_blank" rel="noopener noreferrer">Kick</a></li>
+      </ul>
+      <p class="muted">
+        <span data-l="en">Hand-coded in HTML, CSS &amp; JS · No frameworks</span>
+        <span data-l="tr">HTML, CSS &amp; JS ile elle kodlandı · Framework yok</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-close" type="button" data-lb-close aria-label="Close">×</button>
+    <button class="lb-nav lb-prev" type="button" data-lb-prev aria-label="Previous">‹</button>
+    <figure class="lb-figure"><img data-lb-img alt=""><figcaption data-lb-cap></figcaption></figure>
+    <button class="lb-nav lb-next" type="button" data-lb-next aria-label="Next">›</button>
+  </div>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="js/sculpture.js?v=2" defer></script>
+  <script src="js/main.js?v=3" defer></script>
+</body>
+</html>
